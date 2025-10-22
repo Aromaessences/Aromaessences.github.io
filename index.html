@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aroma Essence - Luxurious Perfumes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href= "ric logo.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,7 +23,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </header>   
 
     <section id="home" class="hero">
         <h2>Welcome to Aroma Essence</h2>
@@ -129,6 +130,17 @@
             alert('Thank you for your message! We will get back to you soon. (Note: This is a demo - no email was sent.)');
             // Reset the form
             this.reset();
+        });
+
+        // Add active class to nav links on click for visual feedback
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Remove active class from all links
+                navLinks.forEach(l => l.classList.remove('active'));
+                // Add active class to clicked link
+                this.classList.add('active');
+            });
         });
     </script>
 </body>
