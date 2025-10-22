@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Essence - Luxurious Perfumes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Aroma Essence</h1>  
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#why-choose-us">Why Choose Us?</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Aroma Essence</h2>
+        <p>Discover the art of fragrance with our exquisite collection of perfumes.</p>
+        <img src="ric cover.jpg" alt="Aroma Essence Banner" class="hero-img">
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Aroma Essence, we craft luxurious perfumes that capture the essence of elegance and individuality. Our mission is to provide scents that inspire and empower.</p>
+        <h3>Our Story</h3>
+        <p>Founded by fragrance experts, we blend tradition with innovation to create unique aromas tailored to your personality.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Perfumes</h2>
+        <p>Explore our signature scents designed for every occasion.</p>
+        <div class="product-menu">
+            <div class="product-item">
+                <img src="ric1.webp" alt="Product 1 - Midnight Rose">
+                <h3>Midnight Rose</h3>
+                <p>A floral masterpiece with notes of rose, jasmine, and vanilla.</p>
+                <p class="price">Price: 499 pesos</p>
+            </div>
+            <div class="product-item">
+                <img src="ric2.jpg" alt="Product 2 - Ocean Breeze">
+                <h3>Ocean Breeze</h3>
+                <p>Fresh and invigorating with citrus and marine accords.</p>
+                <p class="price">Price: 699 pesos</p>
+            </div>
+            <div class="product-item">
+                <img src="ric3.jpeg" alt="Product 3 - Amber Nights">
+                <h3>Amber Nights</h3>
+                <p>Warm and sensual with amber, sandalwood, and musk.</p>
+                <p class="price">Price: 399 pesos</p>
+            </div>
+            <div class="product-item">
+                <img src="ric4.webp" alt="Product 4 - Citrus Spark">
+                <h3>Citrus Spark</h3>
+                <p>Energetic blend of lemon, orange, and ginger.</p>
+                <p class="price">Price: 799 pesos</p>
+            </div>
+            <div class="product-item">
+                <img src="ric5.webp" alt="Product 5 - Velvet Orchid">
+                <h3>Velvet Orchid</h3>
+                <p>Exotic and mysterious with orchid and patchouli.</p>
+                <p class="price">Price: 599 pesos</p>
+            </div>
+            <div class="product-item">
+                <img src="ric6.jpg" alt="Product 6 - Custom Scent Service">
+                <h3>Custom Scent Service</h3>
+                <p>Personalized fragrances crafted just for you.</p>
+                <p class="price">Price: 499 pesos</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Premium, ethically sourced ingredients.</li>
+            <li>Expert craftsmanship and long-lasting scents.</li>
+            <li>Personalized recommendations and fast shipping.</li>
+            <li>Sustainable packaging and eco-friendly practices.</li>
+        </ul>
+    </section>
+
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <p>"Aroma Essence's perfumes are divine! I love the Midnight Rose." - Sophia L.</p>
+        </div>
+        <div class="review">
+            <p>"Exceptional quality and unique scents. Highly recommend!" - Alex R.</p>
+        </div>
+        <div class="review">
+            <p>"My custom scent exceeded expectations. Will order again!" - Mia T.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out for inquiries or custom orders.</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>Email: info@aromaessence.com | Phone: (123) 456-7890</p>
+    </section>
+
+    <footer>	
+        <p>&copy; 2025 Aroma Essence. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Basic form submission handler (client-side only - shows alert)
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            alert('Thank you for your message! We will get back to you soon. (Note: This is a demo - no email was sent.)');
+            // Reset the form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
